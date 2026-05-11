@@ -8,9 +8,9 @@ async function getData(){
   Flask sends JSON back
   JS display result
   */
-  const response = await fetch("http://127.0.0.1:5000/get-cpp-data");
+  const response = await fetch("https://program-design-project.onrender.com/get-backend-data");
   const data = await response.json();
-  document.getElementById("result").innerText = data.output;
+  document.getElementById("title").innerText = data.output;
 }
 
 window.onload = getData()
