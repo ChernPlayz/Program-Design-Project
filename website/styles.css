@@ -1,8 +1,82 @@
 body{
-  background-color: rgb(50, 50, 50);
+  margin: 0;
+  background-color: rgb(47, 53, 58);
   text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-h2{
+#toggleModeBtn{
+  height: 50px;
+  width: 50px;
+  padding: 0;
+  background-color: black;
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#title{
   color: white;
+  font-size: 3rem;
+  font-weight: bold;
+  text-shadow: 5px 5px 5px rgb(0, 0, 0);
+}
+
+button{
+  cursor: pointer;
+}
+
+hr{
+  margin: 40px 0;
+  border-color: rgba(80, 90, 125, 0.9);
+}
+
+.btns button{
+  font-size: 1.75rem;
+  font-weight: bold;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 40px;
+  margin: 0px 10px;
+  transition: background 0.5s ease;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+#addItemBtn{
+  background: linear-gradient(120deg, hsl(200, 100%, 50%), hsl(200, 100%, 30%));
+}
+
+#addItemBtn:hover{
+  background: linear-gradient(120deg, hsl(200, 100%, 70%), hsl(200, 100%, 50%));
+}
+
+#viewItemsBtn{
+  background: linear-gradient(120deg, hsl(125, 100%, 40%), hsl(125, 100%, 20%));
+}
+
+#viewItemsBtn:hover{
+  background: linear-gradient(120deg, hsl(125, 100%, 60%), hsl(125, 100%, 40%));
+}
+
+#updateItemBtn{
+  background: linear-gradient(120deg, hsl(55, 100%, 50%), hsl(55, 100%, 30%));
+}
+
+#updateItemBtn:hover{
+  background: linear-gradient(120deg, hsl(55, 100%, 70%), hsl(55, 100%, 50%));
+}
+
+#delItemBtn{
+  background: linear-gradient(120deg, hsl(0, 100%, 50%), hsl(0, 100%, 30%));
+}
+
+#delItemBtn:hover{
+  background: linear-gradient(120deg, hsl(0, 100%, 70%), hsl(0, 100%, 50%));
+}
+
+.mainContainer{
+  background-color: rgb();
 }

@@ -16,7 +16,6 @@ def home():
 def get_data():
   try:
     result = subprocess.check_output(["./main"])
-    # Send data back to JS as JSON
     return jsonify({
       "status": "success",
       "output": result.decode('utf-8'),

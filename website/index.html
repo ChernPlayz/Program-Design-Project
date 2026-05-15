@@ -5,9 +5,36 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Program Design Project</title>
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,1,0&icon_names=dark_mode" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,1,0&icon_names=light_mode" />
 </head>
 <body>
-  <h2 id="title">Python and C++ Bridge</h2>
+  <header>
+    <button id="toggleModeBtn" onclick="toggleMode()">
+      <span class="material-symbols-outlined">dark_mode</span>
+      <span class="material-symbols-outlined">light_mode</span>
+    </button>
+  </header>
+
+  <h1 id="title">Chern Shop's Inventory Management System</h1>
+
+  <div class="btns">
+    <button id="addItemBtn">➕ Add Item</button>
+    <button id="viewItemsBtn">👁️ View Items</button>
+    <button id="updateItemBtn">✏️ Update Item</button>
+    <button id="delItemBtn">🗑️ Delete Item</button>
+  </div>
+
+  <hr>
+
+  <div class="mainContainer">
+    <input id="id" placeholder="ID">
+    <input id="name" placeholder="Name">
+    <input id="qty" placeholder="Quantity">
+    <input id="price" placeholder="Price">
+    <button onclick="addItem()">Add</button>
+  </div>
+  
   <script src="index.js"></script>
 </body>
 </html>
